@@ -1,0 +1,63 @@
+public class SortNumbers {
+    public static void sortNumbers() {
+        // Define a list of numbers
+        List<Integer> numbers = new List<Integer>{5, 2, 8, 1, 6};
+
+        // Sort the list of numbers
+        numbers.sort();
+
+        // Print the sorted list of numbers
+        for(Integer number1 : numbers) {
+            System.debug(number1);
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+public class FibonacciSeries {
+    public static void generateFibonacci(Integer n) {
+        Integer a = 0;
+        Integer b = 1;
+        Integer c;
+
+        // Print the first two numbers in the series
+        System.debug(a);
+        System.debug(b);
+
+        // Generate the rest of the series
+        for(Integer i = 2; i < n; i++) {
+            c = a + b;
+            System.debug(c);
+            a = b;
+            b = c;
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+public class PositiveNegative {
+    public static void identifyPositiveNegative(Integer num) {
+        if(num > 0) {
+            System.debug(num + ' is positive');
+        } else if(num < 0) {
+            System.debug(num + ' is negative');
+        } else {
+            System.debug('The number is zero');
+        }
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+public class EvenOdd {
+    public static void identifyEvenOdd(Integer num) {
+        if(num % 2 == 0) {
+            System.debug(num + ' is even');
+        } else {
+            System.debug(num + ' is odd');
+        }
+    }
+}
