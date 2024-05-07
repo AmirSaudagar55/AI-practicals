@@ -54,7 +54,7 @@ public class PositiveNegative {
 
 public class EvenOdd {
     public static void identifyEvenOdd(Integer num) {
-        if(num % 2 == 0) {
+        if(Math.Mod(num, 2) == 0) {
             System.debug(num + ' is even');
         } else {
             System.debug(num + ' is odd');
